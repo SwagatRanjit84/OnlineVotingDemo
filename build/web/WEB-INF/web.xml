@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <display-name>EmailSendingWebApp</display-name>
+
+	
+	<context-param>
+		<param-name>host</param-name>
+		<param-value>smtp.gmail.com</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>port</param-name>
+		<param-value>587</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>user</param-name>
+		<param-value>srutsth@gmail.com</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>pass</param-name>
+		<param-value>towery12345</param-value>
+	</context-param>
+     <servlet>
+        <servlet-name>AdminiServlet</servlet-name>
+        <servlet-class>Controller.admin.AdminiServlet </servlet-class>
+         </servlet>
+          
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Controller.LoginServlet </servlet-class>
+         </servlet>
+    
+    <servlet>
+        <servlet-name>EmailSendingServlet</servlet-name>
+        <servlet-class>Controller.EmailSendingServlet </servlet-class>
+         </servlet>
+          <servlet>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <servlet-class>Controller.FeedbackServlet </servlet-class>
+         </servlet>
+          <servlet>
+        <servlet-name>ForumServlet</servlet-name>
+        <servlet-class>Controller.ForumServlet </servlet-class>
+         </servlet>
+         
+          <servlet>
+        <servlet-name>VoterServlet</servlet-name>
+        <servlet-class>Controller.VoterServlet</servlet-class>
+         </servlet>
+        <servlet>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <servlet-class>Controller.RegistrationServlet </servlet-class>
+         </servlet>
+         <servlet>
+        <servlet-name>ResultServlet</servlet-name>
+        <servlet-class>Controller.ResultServlet </servlet-class>
+         </servlet>
+         <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/VoterLogin</url-pattern>
+    </servlet-mapping>
+        <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/AdminLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VoterServlet</servlet-name>
+        <url-pattern>/CandidateList</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/vlogin</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/alogin</url-pattern>
+          </servlet-mapping>
+         <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/fromSpin</url-pattern>
+    </servlet-mapping>
+     
+    <servlet-mapping>
+        <servlet-name>VoterServlet</servlet-name>
+        <url-pattern>/submit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminiServlet</servlet-name>
+        <url-pattern>/AddCandidate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminiServlet</servlet-name>
+        <url-pattern>/AddCandidateForm</url-pattern>
+    </servlet-mapping>
+     
+ <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/enterspin</url-pattern>
+    </servlet-mapping>
+   
+<servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/SecondPinForm</url-pattern>
+    </servlet-mapping>
+              <servlet-mapping>
+        <servlet-name>VoterServlet</servlet-name>
+        <url-pattern>/foru</url-pattern>
+          </servlet-mapping>
+  
+
+     <servlet-mapping>
+        <servlet-name>ForumServlet</servlet-name>
+        <url-pattern>/forum</url-pattern>
+          </servlet-mapping>
+            <servlet-mapping>
+        <servlet-name>ResultServlet</servlet-name>
+        <url-pattern>/define</url-pattern>
+          </servlet-mapping>
+   
+
+    <servlet-mapping>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <url-pattern>/feedback</url-pattern>
+          </servlet-mapping>
+            <servlet-mapping>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <url-pattern>/feedbackSubmit</url-pattern>
+          </servlet-mapping>
+             <servlet-mapping>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <url-pattern>/post</url-pattern>
+          </servlet-mapping>
+           <servlet-mapping>
+        <servlet-name>VoterServlet</servlet-name>
+        <url-pattern>/VotedVoter</url-pattern>
+          </servlet-mapping>
+            <servlet-mapping>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <url-pattern>/checkout</url-pattern>
+          </servlet-mapping>
+           <servlet-mapping>
+        <servlet-name>VoterServlet</servlet-name>
+        <url-pattern>/VotedList</url-pattern>
+          </servlet-mapping>
+             <servlet-mapping>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>/go</url-pattern>
+          </servlet-mapping>
+           <servlet-mapping>
+        <servlet-name>AdminiServlet</servlet-name>
+        <url-pattern>/result</url-pattern>
+          </servlet-mapping>
+           <servlet-mapping>
+        <servlet-name>ResultServlet</servlet-name>
+        <url-pattern>/define</url-pattern>
+          </servlet-mapping>
+          <servlet-mapping>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>/submitemail</url-pattern>
+          </servlet-mapping>
+           <servlet-mapping>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>/submitreg</url-pattern>
+          </servlet-mapping>
+   <welcome-file-list>
+        <welcome-file>contestant.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

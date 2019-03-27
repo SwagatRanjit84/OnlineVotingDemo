@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 24, 2016, 8:56:44 PM
+    Author     : Rashmi Tiwari
+*/
+            
+          .main{ height:850px ; width:100%; margin-left:none; margin:none; padding-top:20px; }
+            .right{ height:300px;  width:40%; padding-right:100px;position: absolute; margin-top:100px; 
+                    right: 0px; padding-top: 50px; margin-right: 40px; }
+            .modal-header, h4, .close { background-color: #185890; color:white !important; text-align: center; font-size: 30px;}
+            .modal-footer {background-color: #f9f9f9;}
+            label{color:#0e497c; font-family: cursive; font-size: 20px; display: ruby-base; }
+            .button1 { box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 16px 20px 0 rgba(0,0,0,0.19);background-color: #185890; /* Green */
+                border: none;  color: white; padding: 5px 12px; text-align: center;display: inline-block;
+                 font-size: 20px; border-radius: 17px 0px;}
+            body {
+                   background-image: url("Nepal-Flag-Wallpaper1.jpg");
+                    background-repeat: no-repeat;
+                    background-position: left top;
+                    background-attachment: fixed;
+                    background-size: 100% 100%;      
+                }
+            .right1{ height:100px ; width:50%; padding-left:90px;position: absolute; 
+                    right: 0px; padding-top: 10px;  }   
+            .right2{ height:200px ; width:50%; padding-left:50px;position: absolute; 
+                    right: 0px; padding-top: 10px;   margin-top: 400px; color:#0e497c; margin-right:40px;  font-family: cursive; font-size: medium; } 
+        
